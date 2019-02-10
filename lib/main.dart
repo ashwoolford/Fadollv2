@@ -18,7 +18,7 @@ class Fadoll extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    
     return new Scaffold(
       body: Center(
         child: Column(
@@ -96,9 +96,11 @@ class MyHomePage extends StatelessWidget {
                         left: 20.0, right: 10.0, top: 10.0),
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(
-                          builder: (context) => LoginPage(),
-                        ));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => LoginPage(),
+                            ));
                       },
                       child: new Container(
                         alignment: Alignment.center,
